@@ -1,0 +1,52 @@
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# 针对Java移动开发工具 (J2ME)  
+.mtj.tmp/  
+
+# 包文件--因为要引用第三方jar。所以去掉*.jar  
+#*.jar  
+*.war  
+*.ear  
+
+# 虚拟机崩溃日志, 详见 http://www.java.com/en/download/help/error_hotspot.xml  
+hs_err_pid*  
+.gradle/  
+
+# app的包  
+*.apk  
+*.ap_  
+
+# VM的dex文件  
+*.dex  
+
+# java的class文件  
+*.class  
+
+# 自动生成的文件  
+bin/  
+gen/  
+
+# 本地配置文件 (sdk path, 等等)  
+local.properties  
+
+# Eclipse 的项目文件  
+.classpath  
+.project  
+
+# Eclipse生成Proguard的文件夹  
+proguard/  
+
+# Intellij project 文件  
+*.iml  
+*.ipr  
+*.iws  
+.idea/  
+out/  
+build/  
+**/build/  
+.gradle  
+production/  
+signing.properties  
+*~  
+#extras/external_tagsoup/  

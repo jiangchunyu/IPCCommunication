@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chunyu.clientoneapp.MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_getService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取服务消息"
+        android:onClick="onGetServie"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="31dp"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/tv_state"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"/>
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="384dp"
+        android:layout_height="199dp"
+        android:text=""
+        android:layout_below="@+id/btn_getService"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="状态"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignEnd="@+id/btn_getService"
+        android:layout_alignRight="@+id/btn_getService"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/btn_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_service"
+        android:layout_alignParentLeft="true"
+        android:onClick="onBindServie"
+        android:layout_alignParentStart="true"
+        android:text="绑定服务"/>
+
+    <Button
+        android:id="@+id/btn_unbind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:text="解除绑定"
+        android:onClick="onUnBindServie"
+        android:layout_above="@+id/tv_service"
+        android:layout_toRightOf="@+id/btn_bind"
+        android:layout_toEndOf="@+id/btn_bind"/>
+</RelativeLayout>
