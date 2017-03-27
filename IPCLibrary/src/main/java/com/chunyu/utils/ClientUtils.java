@@ -28,6 +28,7 @@ public class ClientUtils {
     private static final String TAG = "jcy_ClientUtils";
     private boolean connect = false;
     private ConnectListener mConnectListener;
+    private String action="";
 
     /**
      * 初始化
@@ -44,6 +45,7 @@ public class ClientUtils {
      * 绑定服务
      */
     public boolean bindService() {
+        action=Contant.DEFAUL_TPACKAGE;
         return bindService(Contant.DEFAUL_TPACKAGE);
     }
 
@@ -54,6 +56,7 @@ public class ClientUtils {
      */
     public boolean bindService(String action) {
         if (!isBind) {
+            this.action=action;
             if (mConnectListener != null) {
                 mConnectListener.onBind();
             }
